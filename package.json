@@ -1,0 +1,27 @@
+{
+  "name": "apaleo-whman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/cli"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cli-table": "^0.3.0",
+    "@types/node": "^16.7.13",
+    "dotenv": "^10.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@cord-travel/pms-connect": "^1.0.0",
+    "@cord-travel/pms-connect-apaleo": "^1.0.0",
+    "chalk": "^4.1.2",
+    "cli-spinners": "^2.6.0",
+    "cli-table": "^0.3.6",
+    "commander": "^8.1.0"
+  }
+}
