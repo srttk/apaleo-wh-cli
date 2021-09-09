@@ -1,5 +1,6 @@
+#!/usr/local/node
 import { Command } from 'commander';
-import { listCommands, createCommand, updateCommand, deleteCommand } from './comands';
+import { listCommands, createCommand, updateCommand, deleteCommand, accountCommand } from './comands';
 const program = new Command();
 
 
@@ -11,5 +12,6 @@ program.addCommand(listCommands)
 program.addCommand(createCommand)
 program.addCommand(updateCommand)
 program.addCommand(deleteCommand)
+program.addCommand(accountCommand)
 
 program.parse();

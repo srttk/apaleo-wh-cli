@@ -11,7 +11,11 @@ export const listCommands = program.command("list")
         console.log(chalk.magentaBright("Loading subscription list..."))
         let webhooks = await apaleo.webhooksList()
 
-        console.log(`List of subscriptions`)
+
+        if (webhooks.length === 0) {
+            console.log(`No subscription available`)
+            return
+        }
 
         var table = new Table({
             head: ['# ID', 'Endpoint url', 'Hotels', "Topics"],

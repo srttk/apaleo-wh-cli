@@ -1,6 +1,7 @@
 {
-        "end_point_url": "https://hookb.in/kxp2Eyb8OosBjzggjYwl",
-            "hotel_ids": ["BER"],
+
+        "end_point_url": "{Endpoint url}",
+            "hotel_ids": ["{hotelID}"],
             "topics": [
                 "RatePlan", "UnitGroup", "Reservation","Property","Group","Block","Unit",
                 "Folio","Invoice"

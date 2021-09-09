@@ -1,5 +1,6 @@
 import { program } from 'commander'
 import { getApaleoInstance } from '../init'
+import { getError } from '../utils'
 import DATA from '../data.json'
 export const createCommand = program.command("create")
     .description("Create new web hook from data.json create property")
@@ -7,8 +8,16 @@ export const createCommand = program.command("create")
 
         const apaleo = getApaleoInstance();
 
-        let whId = await apaleo.webhooksCreate(DATA)
+        try {
 
-        console.log(`Webhook created ${whId}`)
+            let whId = await apaleo.webhooksCreate(DATA)
+
+            console.log(`Webhook created ${whId}`)
+        }
+        catch (e) {
+
+            getError(e)
+        }
+
 
     })

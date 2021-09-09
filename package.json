@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/cli"
+    "dev": "ts-node ./src/cli",
+    "build":"tsc"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +24,7 @@
     "cli-spinners": "^2.6.0",
     "cli-table": "^0.3.6",
     "commander": "^8.1.0"
-  }
+  },
+  "bin": "./dist/cli.js",
+  "files": ["dist/**"]
 }
