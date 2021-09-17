@@ -1,6 +1,6 @@
 import { program } from 'commander'
 import Table from 'cli-table'
-import chalk from 'chalk'
+import { loadingText, getError } from '../utils'
 
 import { getApaleoInstance } from '../init'
 export const listCommands = program.command("list")
@@ -8,32 +8,48 @@ export const listCommands = program.command("list")
     .action(async () => {
 
         const apaleo = getApaleoInstance();
-        console.log(chalk.magentaBright("Loading subscription list..."))
-        let webhooks = await apaleo.webhooksList()
+
+        const spinner = loadingText("Loading subscriptions")
+        try {
+
+            let webhooks = await apaleo.webhooksList()
+
+            spinner.stop()
+
+            if (webhooks.length === 0) {
+
+                console.log(`No subscription available`)
+                return
+            }
+
+            var table = new Table({
+                head: ['# ID', 'Endpoint url', 'Hotels', "Topics"],
+                colWidths: [40, 50, 20, 30]
+            });
 
 
-        if (webhooks.length === 0) {
-            console.log(`No subscription available`)
-            return
+            webhooks.map(wh => {
+                table.push([
+                    wh.id,
+                    wh.end_point_url,
+                    wh.hotel_ids.join(','),
+                    wh.topics.join(',')
+                ])
+            })
+
+
+            console.log(table.toString());
         }
 
-        var table = new Table({
-            head: ['# ID', 'Endpoint url', 'Hotels', "Topics"],
-            colWidths: [40, 50, 20, 30]
-        });
+        catch (e) {
+            spinner.stop()
+            getError(e)
+        }
 
 
-        webhooks.map(wh => {
-            table.push([
-                wh.id,
-                wh.end_point_url,
-                wh.hotel_ids.join(','),
-                wh.topics.join(',')
-            ])
-        })
 
 
-        console.log(table.toString());
+
 
 
     })

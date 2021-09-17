@@ -1,5 +1,6 @@
 import { AxiosError } from 'axios'
 import chalk from 'chalk'
+import ora from 'ora'
 export function getError(e: AxiosError) {
 
     let msg = e.message
@@ -17,7 +18,11 @@ export function getError(e: AxiosError) {
 
     console.log(chalk.bgRed(chalk.white(msg)))
     return msg
+}
 
+export function loadingText(text: string) {
+    const spinner = ora(chalk.magentaBright(text)).start();
 
+    return spinner
 
 }

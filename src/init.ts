@@ -13,6 +13,7 @@ export function getCredentials() {
         client_secret: APALEO_CLIENT_SECRET,
         redirect_uri: APALEO_REDIRECT_URI,
         refresh_token: TEST_APALEO_REFRESH_TOKEN
+
     }
 }
 
