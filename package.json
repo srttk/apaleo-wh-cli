@@ -1,5 +1,5 @@
 {
-  "name": "apaleo-whman",
+  "name": "apaleo-wh",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,7 +24,8 @@
     "cli-spinners": "^2.6.0",
     "cli-table": "^0.3.6",
     "commander": "^8.1.0",
-    "ora": "5.4.1"
+    "ora": "5.4.1",
+    "write-json-file": "4.3.0"
   },
   "bin": "./dist/cli.js",
   "files": [

@@ -1,0 +1,20 @@
+{
+	"id": null,
+	"data": {
+		"end_point_url": "",
+		"hotel_ids": [
+			"BER"
+		],
+		"topics": [
+			"RatePlan",
+			"UnitGroup",
+			"Reservation",
+			"Property",
+			"Group",
+			"Block",
+			"Unit",
+			"Folio",
+			"Invoice"
+		]
+	}
+}

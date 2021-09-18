@@ -1,8 +1,8 @@
 import { program } from 'commander'
-import { getApaleoInstance } from '../init'
-import { getError, loadingText } from '../utils'
-import DATA from '../data.json'
-export const updateCommand = program.command("update <id>")
+import { getApaleoInstance } from '../../init'
+import { getError, loadingText } from '../../utils'
+import DATA from '../../data.json'
+export const whUpdate = program.command("update <id>")
     .description("Update id from data.json with data create property")
     .action(async (id) => {
 

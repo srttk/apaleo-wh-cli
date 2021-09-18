@@ -1,7 +1,7 @@
 import { program } from 'commander'
-import { getApaleoInstance } from '../init'
-import { getError, loadingText } from '../utils'
-export const deleteCommand = program.command("delete <id>")
+import { getApaleoInstance } from '../../init'
+import { getError, loadingText } from '../../utils'
+export const whDelete = program.command("delete <id>")
     .description("Delete webhook by id")
     .action(async (id) => {
 
