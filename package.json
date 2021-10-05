@@ -24,6 +24,7 @@
     "cli-spinners": "^2.6.0",
     "cli-table": "^0.3.6",
     "commander": "^8.1.0",
+    "load-json-file": "6.2.0",
     "ora": "5.4.1",
     "write-json-file": "4.3.0"
   },
