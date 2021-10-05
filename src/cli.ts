@@ -1,6 +1,6 @@
 #!/usr/local/node
 import { Command } from 'commander';
-import { listCommands, accountCommand } from './comands';
+import { listCommands, accountCommand, loginCommand } from './comands';
 import { whProgram } from './comands/wh'
 const program = new Command();
 
@@ -11,6 +11,7 @@ program.usage("Apaleo Webhook Manager : list, create, update, delete apaleo webh
 
 program.addCommand(listCommands)
 program.addCommand(accountCommand)
+program.addCommand(loginCommand)
 program.addCommand(whProgram)
 
 

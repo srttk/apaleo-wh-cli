@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-"@cord-travel/pms-connect-apaleo@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@cord-travel/pms-connect-apaleo/-/pms-connect-apaleo-1.0.0.tgz#a6eeb4dd955d4e6eeb55df6f67383e34956395b9"
-  integrity sha512-VZ++hDzxm0zAvuvCZkXcrmLk400uWT3ADt2Gvi+QZ+8RTB/J1YRFw02FOh+70rDcB4szhRyYTELvvJMcutSMhg==
+"@cord-travel/pms-connect-apaleo@^1.0.2-beta.5.4":
+  version "1.0.2-beta.5.4"
+  resolved "https://registry.yarnpkg.com/@cord-travel/pms-connect-apaleo/-/pms-connect-apaleo-1.0.2-beta.5.4.tgz#eadce887ee5ac5ecf7feae0f0f8c09208cd4b408"
+  integrity sha512-ih42yogh3y28YKja+GJX+6vh38e1DmgL5GRrTe+r5AEyBSLYz22SlpM2RK7xhzZ/LwLPfxoUJY08Y8YHyY5sEA==
   dependencies:
     axios "^0.21.1"
 
-"@cord-travel/pms-connect@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@cord-travel/pms-connect/-/pms-connect-1.0.0.tgz#09b160e57d321b38b505a889ec1c8b9d1d24c096"
-  integrity sha512-R5ECvGBYSKBAWtA+sIk+n2lJqerFoqExrwgvuppz7QlHReRyd69DT2DB9kSwdL2b1Bzq9W7FvCGpRuY1vWWErg==
+"@cord-travel/pms-connect@^1.0.2-beta.5.4":
+  version "1.0.2-beta.5.4"
+  resolved "https://registry.yarnpkg.com/@cord-travel/pms-connect/-/pms-connect-1.0.2-beta.5.4.tgz#ee926e35c7abf309542b77a78a17dfd9365652aa"
+  integrity sha512-2B077mqSPb5Qa+3p9mjHhwpfg0uRz4YMLo2fJHlfuGzAK5FdExrxJJqWqk37x7cTz95x40UJk3vpDsLByoJ+Tw==
   dependencies:
     axios "^0.21.1"
 

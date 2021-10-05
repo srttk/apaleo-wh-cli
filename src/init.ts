@@ -1,4 +1,5 @@
 import { config } from 'dotenv'
+import { createStore } from '@cord-travel/pms-connect'
 import { ApaleoConnectAdaptor } from '@cord-travel/pms-connect-apaleo'
 config()
 
@@ -20,6 +21,12 @@ export function getCredentials() {
 function createApaleoInstance() {
 
     apaleo = new ApaleoConnectAdaptor(getCredentials())
+
+    apaleo.setTokenStore(createStore((tokens) => {
+
+        console.log(tokens)
+
+    }))
 }
 
 
