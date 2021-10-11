@@ -1,6 +1,6 @@
 {
-        "end_point_url": "https://cc77-2409-4073-41f-d8d9-5089-2409-d44-59ed.ngrok.io/hit/apaleo/accountId/hotel",
-            "hotel_ids": ["LND"],
+        "end_point_url": "https://35ac-2409-4073-219a-dec0-b470-3356-146f-4717.ngrok.io/webhook/apaleo/336d016e-2e4e-4f42-b8ae-996c6461d193/12",
+            "hotel_ids": ["MUC"],
             "topics": [
                 "RatePlan", "UnitGroup", "Reservation","Property","Group","Block","Unit",
                 "Folio","Invoice"

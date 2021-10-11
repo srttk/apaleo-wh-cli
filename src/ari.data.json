@@ -1,0 +1,8 @@
+{
+    "endpoint_url": "https://f1f5-137-97-118-127.ngrok.io/ari/apaleo/336d016e-2e4e-4f42-b8ae-996c6461d193/12",
+    "hotel_id": "BER",
+    "channel_code": "Ibe",
+    "rate_plan_ids": ["BER-APALEO-SGL"],
+    "number_of_days": 2,
+    "enabled": true
+  }
