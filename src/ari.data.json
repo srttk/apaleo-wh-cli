@@ -1,8 +1,8 @@
 {
-    "endpoint_url": "https://f1f5-137-97-118-127.ngrok.io/ari/apaleo/336d016e-2e4e-4f42-b8ae-996c6461d193/12",
-    "hotel_id": "BER",
+    "endpoint_url": "https://75fe-2409-4073-202-977c-f082-cc4e-2280-b01d.ngrok.io/ari/apaleo/f776b920-fa11-4619-a23a-50f2cee42c5e/12/737d7c2a-608b-43d6-8458-982e942895f2",
+    "hotel_id": "MUC",
     "channel_code": "Ibe",
-    "rate_plan_ids": ["BER-APALEO-SGL"],
-    "number_of_days": 2,
+    "rate_plan_ids": ["MUC-FLEX-FAMILY"],
+    "number_of_days": 30,
     "enabled": true
   }
